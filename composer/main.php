@@ -43,6 +43,7 @@ function downloadComposer()
     echo 'Starting installation...' . PHP_EOL;
     flush();
     $argv = array();
+    putenv('COMPOSER_HOME=' . __DIR__);
     include $installerFile;
     flush();
 }
