@@ -66,7 +66,7 @@ function command()
 {
     command:
     set_time_limit(-1);
-    putenv('COMPOSER_HOME=' . __DIR__ . '/extracted/bin/composer');
+    putenv('COMPOSER_HOME=' . __DIR__ . '/extracted');
     if(!file_exists($_POST['path']))
     {
         echo 'Invalid Path';
